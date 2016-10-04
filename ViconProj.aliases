@@ -1,0 +1,12 @@
+[My Computer]
+My Computer = "192.168.1.10"
+
+[Networked Computer/Device]
+Networked Computer/Device = "192.168.1.6"
+
+[RT myRIO Target]
+RT myRIO Target = "192.168.1.6"
+
+[SeRViCE-Lab]
+SeRViCE-Lab = "192.168.1.6"
+
