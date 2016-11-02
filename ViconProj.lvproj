@@ -2,6 +2,8 @@
 <Project Type="Project" LVVersion="15008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
+	<Property Name="varPersistentID:{1EAC9F40-3B70-4FED-8D30-761931E84E92}" Type="Ref">/My Computer/NeuralWeights.lvlib/NeunetWeights</Property>
+	<Property Name="varPersistentID:{AE08C62F-6E41-4867-9FD3-D5E496C0A459}" Type="Ref">/SeRViCE-Lab/NeuNet AMFC/NeuralWeights.lvlib/NeunetWeights</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="alias.value" Type="Str">192.168.1.10</Property>
 		<Property Name="IOScan.Faults" Type="Str"></Property>
@@ -22,8 +24,8 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">true</Property>
 		<Item Name="NeuNet_Sub.vi" Type="VI" URL="../NeuNet AMFC/NeuNet_Sub.vi"/>
+		<Item Name="NeuralWeights.lvlib" Type="Library" URL="../NeuNet AMFC/NeuralWeights.lvlib"/>
 		<Item Name="Vicon_Receiver.vi" Type="VI" URL="../Misc/Vicon_Receiver.vi"/>
-		<Item Name="ViconL_Receiver.vi" Type="VI" URL="../Misc/ViconL_Receiver.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="_ROSControl.ctl" Type="VI" URL="/&lt;userlib&gt;/ROS for LabVIEW Software/ROS/Code/SubVIs/_ROSControl.ctl"/>
