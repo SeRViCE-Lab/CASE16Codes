@@ -23,9 +23,9 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">true</Property>
-		<Item Name="NeuNet_Sub.vi" Type="VI" URL="../NeuNet AMFC/NeuNet_Sub.vi"/>
+		<Item Name="Float64.vi" Type="VI" URL="../Misc/Float64.vi"/>
+		<Item Name="NeuNet_Sub.vi" Type="VI" URL="../NeuNet_Sub.vi"/>
 		<Item Name="NeuralWeights.lvlib" Type="Library" URL="../NeuNet AMFC/NeuralWeights.lvlib"/>
-		<Item Name="Vicon_Receiver.vi" Type="VI" URL="../Misc/Vicon_Receiver.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="_ROSControl.ctl" Type="VI" URL="/&lt;userlib&gt;/ROS for LabVIEW Software/ROS/Code/SubVIs/_ROSControl.ctl"/>
@@ -53,6 +53,7 @@
 				<Item Name="GetWriteQueue.vi" Type="VI" URL="/&lt;userlib&gt;/ROS for LabVIEW Software/ROS/Code/SubVIs/GetWriteQueue.vi"/>
 				<Item Name="NodifyROS.vi" Type="VI" URL="/&lt;userlib&gt;/ROS for LabVIEW Software/ROS/Code/SubVIs/NodifyROS.vi"/>
 				<Item Name="RedefineMasterIP.vi" Type="VI" URL="/&lt;userlib&gt;/ROS for LabVIEW Software/ROS/Code/SubVIs/RedefineMasterIP.vi"/>
+				<Item Name="ROS_Loop_Rate.vi" Type="VI" URL="/&lt;userlib&gt;/ROS for LabVIEW Software/ROS/Code/ROS_Loop_Rate.vi"/>
 				<Item Name="ROS_Topic_Close.vi" Type="VI" URL="/&lt;userlib&gt;/ROS for LabVIEW Software/ROS/Code/ROS_Topic_Close.vi"/>
 				<Item Name="ROS_Topic_Close_Primitive.vi" Type="VI" URL="/&lt;userlib&gt;/ROS for LabVIEW Software/ROS/Code/ROS_Topic_Close_Primitive.vi"/>
 				<Item Name="ROS_Topic_Init.vi" Type="VI" URL="/&lt;userlib&gt;/ROS for LabVIEW Software/ROS/Code/ROS_Topic_Init.vi"/>
@@ -71,10 +72,6 @@
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
-				<Item Name="UDP Multicast Open.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/UDP Multicast Open.vi"/>
-				<Item Name="UDP Multicast Read-Only Open.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/UDP Multicast Read-Only Open.vi"/>
-				<Item Name="UDP Multicast Read-Write Open.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/UDP Multicast Read-Write Open.vi"/>
-				<Item Name="UDP Multicast Write-Only Open.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/UDP Multicast Write-Only Open.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 		</Item>
@@ -301,11 +298,9 @@ AddOutputFilter chunkFilter
 						<Item Name="documentation" Type="Folder">
 							<Item Name="myRIO and roboRIO Help.pdf" Type="Document" URL="/&lt;userlib&gt;/ROS for LabVIEW Software/Examples/ROSRIO Examples/roboRIO/documentation/myRIO and roboRIO Help.pdf"/>
 						</Item>
-						<Item Name="PublishToTopic.vi" Type="VI" URL="/&lt;userlib&gt;/ROS for LabVIEW Software/Examples/ROSRIO Examples/roboRIO/PublishToTopic.vi"/>
 						<Item Name="ROSforLabVIEWSoftware_roboRIO.aliases" Type="Document" URL="/&lt;userlib&gt;/ROS for LabVIEW Software/Examples/ROSRIO Examples/roboRIO/ROSforLabVIEWSoftware_roboRIO.aliases"/>
 						<Item Name="ROSforLabVIEWSoftware_roboRIO.lvlps" Type="Document" URL="/&lt;userlib&gt;/ROS for LabVIEW Software/Examples/ROSRIO Examples/roboRIO/ROSforLabVIEWSoftware_roboRIO.lvlps"/>
 						<Item Name="ROSforLabVIEWSoftware_roboRIO.lvproj" Type="Document" URL="/&lt;userlib&gt;/ROS for LabVIEW Software/Examples/ROSRIO Examples/roboRIO/ROSforLabVIEWSoftware_roboRIO.lvproj"/>
-						<Item Name="SubscribeToTopic.vi" Type="VI" URL="/&lt;userlib&gt;/ROS for LabVIEW Software/Examples/ROSRIO Examples/roboRIO/SubscribeToTopic.vi"/>
 					</Item>
 					<Item Name=".DS_Store" Type="Document" URL="/&lt;userlib&gt;/ROS for LabVIEW Software/Examples/ROSRIO Examples/.DS_Store"/>
 					<Item Name="dir.mnu" Type="Document" URL="/&lt;userlib&gt;/ROS for LabVIEW Software/Examples/ROSRIO Examples/dir.mnu"/>
@@ -3111,21 +3106,6 @@ AddOutputFilter chunkFilter
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="parse_primitive.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2015 64-bit/user.lib/ROS for LabVIEW Software/ROS/MessageParsing/std_msgs/parse_primitive.vi"/>
-			<Item Name="parse_time.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2015 64-bit/user.lib/ROS for LabVIEW Software/ROS/MessageParsing/std_msgs/parse_time.vi"/>
-			<Item Name="parse_duration.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2015 64-bit/user.lib/ROS for LabVIEW Software/ROS/MessageParsing/std_msgs/parse_duration.vi"/>
-			<Item Name="parse_i8_scalar.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2015 64-bit/user.lib/ROS for LabVIEW Software/ROS/MessageParsing/std_msgs/subs/parse_i8_scalar.vi"/>
-			<Item Name="parse_i32_scalar.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2015 64-bit/user.lib/ROS for LabVIEW Software/ROS/MessageParsing/std_msgs/subs/parse_i32_scalar.vi"/>
-			<Item Name="parse_float64_scalar.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2015 64-bit/user.lib/ROS for LabVIEW Software/ROS/MessageParsing/std_msgs/subs/parse_float64_scalar.vi"/>
-			<Item Name="parse_bool_scalar.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2015 64-bit/user.lib/ROS for LabVIEW Software/ROS/MessageParsing/std_msgs/subs/parse_bool_scalar.vi"/>
-			<Item Name="parse_i16_scalar.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2015 64-bit/user.lib/ROS for LabVIEW Software/ROS/MessageParsing/std_msgs/subs/parse_i16_scalar.vi"/>
-			<Item Name="parse_float32_scalar.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2015 64-bit/user.lib/ROS for LabVIEW Software/ROS/MessageParsing/std_msgs/subs/parse_float32_scalar.vi"/>
-			<Item Name="parse_u64_scalar.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2015 64-bit/user.lib/ROS for LabVIEW Software/ROS/MessageParsing/std_msgs/subs/parse_u64_scalar.vi"/>
-			<Item Name="parse_duration_scalar.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2015 64-bit/user.lib/ROS for LabVIEW Software/ROS/MessageParsing/std_msgs/subs/parse_duration_scalar.vi"/>
-			<Item Name="parse_time_scalar.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2015 64-bit/user.lib/ROS for LabVIEW Software/ROS/MessageParsing/std_msgs/subs/parse_time_scalar.vi"/>
-			<Item Name="parse_i64_scalar.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2015 64-bit/user.lib/ROS for LabVIEW Software/ROS/MessageParsing/std_msgs/subs/parse_i64_scalar.vi"/>
-			<Item Name="parse_u16_scalar.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2015 64-bit/user.lib/ROS for LabVIEW Software/ROS/MessageParsing/std_msgs/subs/parse_u16_scalar.vi"/>
-			<Item Name="MsgExists.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2015 64-bit/user.lib/ROS for LabVIEW Software/ROS/MessageParsing/subs/MsgExists.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="ROSToRIO" Type="Source Distribution">
@@ -3137,7 +3117,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{57A54665-77E6-41CC-B48A-3347F544FDBA}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.build" Type="Int">2</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin</Property>
