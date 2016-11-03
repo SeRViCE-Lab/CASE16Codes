@@ -950,21 +950,6 @@ AddOutputFilter chunkFilter
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="MsgExists.vi" Type="VI" URL="../../../../../../../LabVIEW 2015 64-bit/user.lib/ROS for LabVIEW Software/ROS/MessageParsing/subs/MsgExists.vi"/>
-			<Item Name="parse_bool_scalar.vi" Type="VI" URL="../../../../../../../LabVIEW 2015 64-bit/user.lib/ROS for LabVIEW Software/ROS/MessageParsing/std_msgs/subs/parse_bool_scalar.vi"/>
-			<Item Name="parse_duration.vi" Type="VI" URL="../../../../../../../LabVIEW 2015 64-bit/user.lib/ROS for LabVIEW Software/ROS/MessageParsing/std_msgs/parse_duration.vi"/>
-			<Item Name="parse_duration_scalar.vi" Type="VI" URL="../../../../../../../LabVIEW 2015 64-bit/user.lib/ROS for LabVIEW Software/ROS/MessageParsing/std_msgs/subs/parse_duration_scalar.vi"/>
-			<Item Name="parse_float32_scalar.vi" Type="VI" URL="../../../../../../../LabVIEW 2015 64-bit/user.lib/ROS for LabVIEW Software/ROS/MessageParsing/std_msgs/subs/parse_float32_scalar.vi"/>
-			<Item Name="parse_float64_scalar.vi" Type="VI" URL="../../../../../../../LabVIEW 2015 64-bit/user.lib/ROS for LabVIEW Software/ROS/MessageParsing/std_msgs/subs/parse_float64_scalar.vi"/>
-			<Item Name="parse_i8_scalar.vi" Type="VI" URL="../../../../../../../LabVIEW 2015 64-bit/user.lib/ROS for LabVIEW Software/ROS/MessageParsing/std_msgs/subs/parse_i8_scalar.vi"/>
-			<Item Name="parse_i16_scalar.vi" Type="VI" URL="../../../../../../../LabVIEW 2015 64-bit/user.lib/ROS for LabVIEW Software/ROS/MessageParsing/std_msgs/subs/parse_i16_scalar.vi"/>
-			<Item Name="parse_i32_scalar.vi" Type="VI" URL="../../../../../../../LabVIEW 2015 64-bit/user.lib/ROS for LabVIEW Software/ROS/MessageParsing/std_msgs/subs/parse_i32_scalar.vi"/>
-			<Item Name="parse_i64_scalar.vi" Type="VI" URL="../../../../../../../LabVIEW 2015 64-bit/user.lib/ROS for LabVIEW Software/ROS/MessageParsing/std_msgs/subs/parse_i64_scalar.vi"/>
-			<Item Name="parse_primitive.vi" Type="VI" URL="../../../../../../../LabVIEW 2015 64-bit/user.lib/ROS for LabVIEW Software/ROS/MessageParsing/std_msgs/parse_primitive.vi"/>
-			<Item Name="parse_time.vi" Type="VI" URL="../../../../../../../LabVIEW 2015 64-bit/user.lib/ROS for LabVIEW Software/ROS/MessageParsing/std_msgs/parse_time.vi"/>
-			<Item Name="parse_time_scalar.vi" Type="VI" URL="../../../../../../../LabVIEW 2015 64-bit/user.lib/ROS for LabVIEW Software/ROS/MessageParsing/std_msgs/subs/parse_time_scalar.vi"/>
-			<Item Name="parse_u16_scalar.vi" Type="VI" URL="../../../../../../../LabVIEW 2015 64-bit/user.lib/ROS for LabVIEW Software/ROS/MessageParsing/std_msgs/subs/parse_u16_scalar.vi"/>
-			<Item Name="parse_u64_scalar.vi" Type="VI" URL="../../../../../../../LabVIEW 2015 64-bit/user.lib/ROS for LabVIEW Software/ROS/MessageParsing/std_msgs/subs/parse_u64_scalar.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="ROS for LabVIEW Software" Type="Source Distribution">
