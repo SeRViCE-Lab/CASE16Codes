@@ -1,5 +1,9 @@
 [ProjectWindow_Data]
+<<<<<<< HEAD
 ProjectExplorer.ClassicPosition[String] = "88,997,619,1326"
+=======
+ProjectExplorer.ClassicPosition[String] = "265,-1248,796,-919"
+>>>>>>> refs/heads/NovWork
 
 [AB_Cache_{6BE7471F-AC4C-4FDF-AD0C-4CE2283E6A38}]
 Cache_Path[Path] Line0001 = "/C/Users/opo140030/AppData/Local/Temp/AB_Cache_{6B"
