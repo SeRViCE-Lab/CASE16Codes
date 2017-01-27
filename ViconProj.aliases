@@ -8,5 +8,5 @@ Networked Computer/Device = "192.168.1.6"
 RT myRIO Target = "192.168.1.6"
 
 [SeRViCE-Lab]
-SeRViCE-Lab = "192.168.1.6"
+SeRViCE-Lab = "192.168.1.101"
 
