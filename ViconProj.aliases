@@ -1,12 +1,12 @@
+[lexilighty]
+lexilighty = "172.22.11.2"
+
 [My Computer]
 My Computer = "192.168.1.10"
 
 [Networked Computer/Device]
-Networked Computer/Device = "192.168.1.6"
+Networked Computer/Device = "192.168.1.50"
 
 [RT myRIO Target]
-RT myRIO Target = "192.168.1.6"
-
-[SeRViCE-Lab]
-SeRViCE-Lab = "192.168.1.101"
+RT myRIO Target = "10.103.200.15"
 
